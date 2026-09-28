@@ -1,0 +1,6 @@
+CREATE TABLE Stock
+(
+    StockId INT PRIMARY KEY IDENTITY(1,1),
+    Symbol VARCHAR(20) NOT NULL,
+    CompanyName NVARCHAR(100) NOT NULL
+);

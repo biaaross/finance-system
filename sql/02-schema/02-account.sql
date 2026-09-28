@@ -1,0 +1,14 @@
+CREATE TABLE Account
+(
+    AccountId INT PRIMARY KEY IDENTITY(1,1),
+    AccountNo VARCHAR(20) NOT NULL,
+    Balance DECIMAL(18,2) NOT NULL DEFAULT 0,
+    CustomerId INT NOT NULL,
+    Currency VARCHAR(10) NOT NULL DEFAULT 'TRY',
+    Status VARCHAR(20) NOT NULL DEFAULT 'ACTIVE',
+    CreatedAt DATETIME2 NOT NULL DEFAULT GETDATE(),
+
+    CONSTRAINT FK_Account_Customer
+        FOREIGN KEY (CustomerId)
+        REFERENCES Customer(CustomerId)
+);
