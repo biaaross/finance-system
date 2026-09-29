@@ -1,0 +1,57 @@
+# Visual Studio
+
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+
+.vscode/
+
+# Build output
+
+bin/
+obj/
+
+# .NET
+
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# User-specific files
+
+*.rsuser
+
+# SQL Server / Local database files
+
+*.mdf
+*.ndf
+*.ldf
+*.bak
+
+# Environment / secrets
+
+.env
+.env.*
+appsettings.Local.json
+appsettings.Development.json
+
+# Logs
+
+*.log
+logs/
+
+# Temporary files
+
+*.tmp
+*.temp
+
+# OS files
+
+.DS_Store
+Thumbs.db
+desktop.ini
